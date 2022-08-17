@@ -15,4 +15,4 @@ jobs:
         password: ${{ secrets.password}}
     - run: docker build -t ${{ secrets.username }}/webapp .
     - run: docker push ${{ secrets.username }}/webapp:latest
-    - run: echo "my task is completed"
+    - run: echo "my task is finish"
