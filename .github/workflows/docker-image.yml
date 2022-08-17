@@ -13,6 +13,6 @@ jobs:
       with:
         username: ${{ secrets.username}}
         password: ${{ secrets.password}}
-    - run: docker build -t ${{ secrets.username }}/webpages .
-    - run: docker push ${{ secrets.username }}/webpages:latest
+    - run: docker build -t ${{ secrets.username }}/webapp .
+    - run: docker push ${{ secrets.username }}/webapp:latest
     - run: echo "my task is completed"
